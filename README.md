@@ -1,1 +1,1 @@
-FirstSquad.2020.b
+FirstSquad2020
