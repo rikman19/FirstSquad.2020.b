@@ -10,6 +10,7 @@ namespace Zetcil
         public SerializedProperty
             isEnabled,
             TargetCamera,
+            SkipAllAnimation,
             CardCollection,
             usingTrueCompareEvent,
             TrueCompareEvent,
@@ -31,6 +32,7 @@ namespace Zetcil
             // Setup the SerializedProperties
             isEnabled = serializedObject.FindProperty("isEnabled");
             TargetCamera = serializedObject.FindProperty("TargetCamera");
+            SkipAllAnimation = serializedObject.FindProperty("SkipAllAnimation");
             CardCollection = serializedObject.FindProperty("CardCollection");
             usingTrueCompareEvent = serializedObject.FindProperty("usingTrueCompareEvent");
             TrueCompareEvent = serializedObject.FindProperty("TrueCompareEvent");
@@ -58,6 +60,7 @@ namespace Zetcil
             if (check)
             {
                 EditorGUILayout.PropertyField(TargetCamera, true);
+                EditorGUILayout.PropertyField(SkipAllAnimation, true);
                 EditorGUILayout.PropertyField(CardCollection, true);
 
                 EditorGUILayout.PropertyField(usingTrueCompareEvent, true);

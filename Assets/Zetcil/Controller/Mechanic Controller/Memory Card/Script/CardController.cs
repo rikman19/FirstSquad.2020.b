@@ -13,6 +13,7 @@ namespace Zetcil
         [Space(10)]
         public bool isEnabled;
         public Camera TargetCamera;
+        public bool SkipAllAnimation;
 
         [System.Serializable]
         public class CCardSettings
@@ -67,6 +68,13 @@ namespace Zetcil
         {
             CurrentIndex = -1;
             InvokeRepeating("IsMechanicFinished", 1, 1);
+            if (SkipAllAnimation)
+            {
+                for (int i = 0; i < CardCollection.Count; i++)
+                {
+                    CardCollection[i].usingFlipAnimation = false;
+                }
+            }
         }
 
         // Update is called once per frame
