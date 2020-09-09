@@ -47,6 +47,7 @@ TagManager:
   - FrontCard
   - BackCard
   - Inside Barrel
+  - Dynamite
   layers:
   - Default
   - TransparentFX
