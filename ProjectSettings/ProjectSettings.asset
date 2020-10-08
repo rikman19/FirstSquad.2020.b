@@ -243,8 +243,13 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
+<<<<<<< Updated upstream
   AndroidKeystoreName: D:/Jobs/Keystores/ImFirstSquad.keystore
   AndroidKeyaliasName: hehe1
+=======
+  AndroidKeystoreName: '{inproject}: firstmediakeystore.keystore'
+  AndroidKeyaliasName: first media
+>>>>>>> Stashed changes
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
