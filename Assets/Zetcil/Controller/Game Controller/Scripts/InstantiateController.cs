@@ -40,6 +40,10 @@ namespace Zetcil
         public bool usingInterval;
         public float Interval;
 
+        public void SetEnabled(bool aValue)
+        {
+            isEnabled = aValue;
+        }
 
         // Use this for initialization
         void Awake()
@@ -93,17 +97,23 @@ namespace Zetcil
         {
             if (usingParent)
             {
-                GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation, TargetParent);
-                if (AfterInstantiate == CEnumAfterInstantiate.DetachFromParent)
+                if (isEnabled)
                 {
-                    temp.transform.parent = null;
+                    GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation, TargetParent);
+                    if (AfterInstantiate == CEnumAfterInstantiate.DetachFromParent)
+                    {
+                        temp.transform.parent = null;
+                    }
+                    if (temp == null) Debug.Log("Instantiate Failed.");
                 }
-                if (temp == null) Debug.Log("Instantiate Failed.");
             }
             else
             {
-                GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation);
-                if (temp == null) Debug.Log("Instantiate Failed.");
+                if (isEnabled)
+                {
+                    GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation);
+                    if (temp == null) Debug.Log("Instantiate Failed.");
+                }
             }
         }
 
@@ -111,17 +121,23 @@ namespace Zetcil
         {
             if (usingParent)
             {
-                GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation, TargetParent);
-                if (AfterInstantiate == CEnumAfterInstantiate.DetachFromParent)
+                if (isEnabled)
                 {
-                    temp.transform.parent = null;
+                    GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation, TargetParent);
+                    if (AfterInstantiate == CEnumAfterInstantiate.DetachFromParent)
+                    {
+                        temp.transform.parent = null;
+                    }
+                    if (temp == null) Debug.Log("Instantiate Failed.");
                 }
-                if (temp == null) Debug.Log("Instantiate Failed.");
             }
             else
             {
-                GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation);
-                if (temp == null) Debug.Log("Instantiate Failed.");
+                if (isEnabled)
+                {
+                    GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation);
+                    if (temp == null) Debug.Log("Instantiate Failed.");
+                }
             }
         }
 
@@ -137,17 +153,23 @@ namespace Zetcil
         {
             if (usingParent)
             {
-                GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation, TargetParent);
-                if (AfterInstantiate == CEnumAfterInstantiate.DetachFromParent)
+                if (isEnabled)
                 {
-                    temp.transform.parent = null;
+                    GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation, TargetParent);
+                    if (AfterInstantiate == CEnumAfterInstantiate.DetachFromParent)
+                    {
+                        temp.transform.parent = null;
+                    }
+                    if (temp == null) Debug.Log("Instantiate Failed.");
                 }
-                if (temp == null) Debug.Log("Instantiate Failed.");
             }
             else
             {
-                GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation);
-                if (temp == null) Debug.Log("Instantiate Failed.");
+                if (isEnabled)
+                {
+                    GameObject temp = Instantiate(TargetPrefab, TargetPosition.position, TargetPosition.rotation);
+                    if (temp == null) Debug.Log("Instantiate Failed.");
+                }
             }
         }
     }

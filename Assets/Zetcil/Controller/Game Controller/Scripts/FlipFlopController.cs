@@ -25,6 +25,10 @@ namespace Zetcil
         [Header("Status")]
         [ReadOnly] public float currentClock = 0;
 
+        public void SetEnabled(bool aValue)
+        {
+            isEnabled = aValue;
+        }
         // Start is called before the first frame update
         void Start()
         {
@@ -33,19 +37,22 @@ namespace Zetcil
 
         public void ExecuteFlipFlop()
         {
-            currentClock++;
-            if (currentClock % 2 == 0)
+            if (isEnabled)
             {
-                if (usingFlipEvent)
+                currentClock++;
+                if (currentClock % 2 == 0)
                 {
-                    FlipEvent.Invoke();
+                    if (usingFlipEvent)
+                    {
+                        FlipEvent.Invoke();
+                    }
                 }
-            }
-            else 
-            {
-                if (usingFlopEvent)
+                else
                 {
-                    FlopEvent.Invoke();
+                    if (usingFlopEvent)
+                    {
+                        FlopEvent.Invoke();
+                    }
                 }
             }
         }

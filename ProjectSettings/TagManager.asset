@@ -48,6 +48,8 @@ TagManager:
   - BackCard
   - Inside Barrel
   - Dynamite
+  - PlayerAttack
+  - EnemyBody
   layers:
   - Default
   - TransparentFX
