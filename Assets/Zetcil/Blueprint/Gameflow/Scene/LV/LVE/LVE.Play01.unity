@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4514069, g: 0.50087017, b: 0.5721601, a: 1}
+  m_IndirectSpecularColor: {r: 0.45140713, g: 0.5008705, b: 0.57216054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3729,7 +3729,7 @@ PrefabInstance:
     - target: {fileID: 114559040775882532, guid: 1aca0de7c23746a4f8f4c52be6ded897,
         type: 3}
       propertyPath: EqualConditionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114559040775882532, guid: 1aca0de7c23746a4f8f4c52be6ded897,
         type: 3}
@@ -3740,11 +3740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: EqualConditionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 818356804}
+      objectReference: {fileID: 1608209943}
     - target: {fileID: 114559040775882532, guid: 1aca0de7c23746a4f8f4c52be6ded897,
         type: 3}
       propertyPath: EqualConditionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentValue
+      value: InvokeEventController
       objectReference: {fileID: 0}
     - target: {fileID: 114559040775882532, guid: 1aca0de7c23746a4f8f4c52be6ded897,
         type: 3}
@@ -11698,7 +11698,7 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -11748,7 +11748,7 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -11764,11 +11764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1845365738}
+      objectReference: {fileID: 1465525618}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: InvokeEventController
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -11778,7 +11778,7 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -11794,11 +11794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 666176298}
+      objectReference: {fileID: 666176301}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: SetActive
+      value: TweenIn
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -13197,7 +13197,7 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: LVG.Play01.Score
+      value: LVE.Play01.Score
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -13267,7 +13267,7 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
-      value: LVG.Play01.Star
+      value: LVE.Play01.Star
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -13332,7 +13332,7 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_StringArgument
-      value: LVG.Play02.Status
+      value: LVE.Play02.Status
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -15616,7 +15616,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15687,7 +15687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
-  CollisionType: 0
+  CollisionType: 1
   usingRigidbody2D: 0
   TargetRigidbody2D: {fileID: 0}
   usingTriggerEnter2D: 1
@@ -15715,11 +15715,34 @@ MonoBehaviour:
   TriggerExit2DEvent:
     m_PersistentCalls:
       m_Calls: []
-  usingCollisionEnter2D: 0
-  CollisionEnter2DTag: []
+  usingCollisionEnter2D: 1
+  CollisionEnter2DTag:
+  - Player
   CollisionEnter2DEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1608209943}
+        m_MethodName: InvokeEventController
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   usingDestroyCollisionEnter2D: 0
   DestroyCollisionEnter2D: 0
   DestroyCollisionEnter2DDelay: 0
@@ -16963,7 +16986,7 @@ PrefabInstance:
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
       propertyPath: CurrentValue
-      value: LVG.LevelSelection
+      value: LVE.LevelSelection
       objectReference: {fileID: 0}
     - target: {fileID: 6829716459465604332, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
