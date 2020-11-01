@@ -66,6 +66,10 @@ namespace Zetcil
                     {
                         DebugText = HealthVariables.CurrentValue.ToString();
                     }
+                    if (VariableType == GlobalVariable.CVariableType.manaVar)
+                    {
+                        DebugText = ManaVariables.CurrentValue.ToString();
+                    }
                     if (VariableType == GlobalVariable.CVariableType.scoreVar)
                     {
                         DebugText = ScoreVariables.CurrentValue.ToString();
@@ -94,6 +98,10 @@ namespace Zetcil
                 if (VariableType == GlobalVariable.CVariableType.healthVar)
                 {
                     TargetText.text = PrefixText + HealthVariables.CurrentValue.ToString() + PostfixText;
+                }
+                if (VariableType == GlobalVariable.CVariableType.manaVar)
+                {
+                    TargetText.text = PrefixText + ManaVariables.CurrentValue.ToString() + PostfixText;
                 }
                 if (VariableType == GlobalVariable.CVariableType.scoreVar)
                 {

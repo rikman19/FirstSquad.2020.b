@@ -159,29 +159,20 @@ namespace Zetcil
             //-- START SFX
             if (DamageSender.StartSFX.SFXType == CSFXType.Instantiate)
             {
-                ExecuteActivateSFX();
+                //ExecuteActivateSFX();
             }
             if (DamageSender.StartSFX.SFXType == CSFXType.Instantiate)
             {
-                ExecuteInstantiateSFX();
+                //ExecuteInstantiateSFX();
             }
             //-- INBETWEEN SFX
             if (DamageSender.InBetweenSFX.SFXType == CSFXType.Activate)
             {
-                ExecuteActivateSFX();
+                //ExecuteActivateSFX();
             }
             if (DamageSender.InBetweenSFX.SFXType == CSFXType.Instantiate)
             {
-                ExecuteInstantiateSFX();
-            }
-            //-- FINISH SFX
-            if (DamageSender.FinishSFX.SFXType == CSFXType.Activate)
-            {
-                ExecuteActivateSFX();
-            }
-            if (DamageSender.FinishSFX.SFXType == CSFXType.Instantiate)
-            {
-                ExecuteInstantiateSFX();
+                //ExecuteInstantiateSFX();
             }
         }
 
@@ -248,13 +239,22 @@ namespace Zetcil
 
         public void ExecuteInstantiateSFX()
         {
-            if (DamageSender.usingFinishSFX)
+            if (DamageSender.usingStartSFX)
             {
                 GameObject temp = GameObject.Instantiate(DamageSender.StartSFX.TargetSFX, CurrentSpriteDamageController.transform.position, CurrentSpriteDamageController.transform.rotation);
                 temp.SetActive(true);
                 if (DamageSender.StartSFX.usingDestroySettings)
                 {
                     Destroy(temp, DamageSender.StartSFX.DestroyTime);
+                }
+            }
+            if (DamageSender.usingFinishSFX)
+            {
+                GameObject temp = GameObject.Instantiate(DamageSender.FinishSFX.TargetSFX, CurrentSpriteDamageController.transform.position, CurrentSpriteDamageController.transform.rotation);
+                temp.SetActive(true);
+                if (DamageSender.FinishSFX.usingDestroySettings)
+                {
+                    Destroy(temp, DamageSender.FinishSFX.DestroyTime);
                 }
             }
         }
@@ -397,6 +397,18 @@ namespace Zetcil
             if (DamagerType == CDamageType.DamageReceiver || DamagerType == CDamageType.AIDamageReceiver) // check sender
             {
                 isHit = false;
+
+                if (DamageSender.usingFinishSFX)
+                {
+                    if (DamageSender.FinishSFX.SFXType == CSFXType.Instantiate)
+                    {
+                        GameObject temp = GameObject.Instantiate(DamageSender.FinishSFX.TargetSFX, CurrentSpriteDamageController.transform.position, CurrentSpriteDamageController.transform.rotation);
+                        if (DamageSender.FinishSFX.usingDestroySettings)
+                        {
+                            Destroy(temp, DamageSender.FinishSFX.DestroyTime);
+                        }
+                    }
+                }
 
                 //******************************************************************************* HEALTH RECEIVER
                 if (DamageReceiver.usingVarHealth)

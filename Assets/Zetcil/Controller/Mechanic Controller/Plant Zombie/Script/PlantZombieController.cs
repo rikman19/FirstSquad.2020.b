@@ -166,10 +166,26 @@ namespace Zetcil
 
         void OnTriggerEnter2D(Collider2D collider)
         {
-            if (collider.tag == AttackBumperTag)
+            //StatusType = CStatusType.Walk;
+            if (collider.gameObject.tag == WalkBumperTag)
+            {
+                StatusType = CStatusType.Attack;
+                collisionTarget = collider.gameObject;
+            }
+            if (collider.gameObject.tag == AttackBumperTag)
             {
                 TargetHealth.CurrentValue -= 5;
                 GetHitAnimationPlay();
+            }
+        }
+
+        void OnTriggerStay2D(Collider2D collider)
+        {
+            //StatusType = CStatusType.Walk;
+            if (collider.gameObject.tag == WalkBumperTag)
+            {
+                StatusType = CStatusType.Attack;
+                collisionTarget = collider.gameObject;
             }
         }
 

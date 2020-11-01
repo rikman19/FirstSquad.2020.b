@@ -140,7 +140,7 @@ MonoBehaviour:
   TranslateType: 5
   Speed: 20
   usingDestroy: 1
-  DestroyDelay: 3
+  DestroyDelay: 1
 --- !u!114 &8696009900685084890
 MonoBehaviour:
   m_ObjectHideFlags: 0
