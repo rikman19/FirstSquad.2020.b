@@ -103,7 +103,7 @@ namespace Zetcil
         // Start is called before the first frame update
         void Start()
         {
-
+            InvokeHighScore();
         }
 
         // Update is called once per frame

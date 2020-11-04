@@ -238,7 +238,7 @@ Transform:
   m_Children:
   - {fileID: 419569860}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &66794536
 MonoBehaviour:
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnabled: 1
   MainURL: {fileID: 1159301743}
-  Limit: 500
+  Limit: 50
   SubmitURL: 
   RequestOutput: {fileID: 419569859}
   PrintDebugConsole: 1
@@ -511,7 +511,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 48
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1897,7 +1897,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 48
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2223,7 +2223,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 48
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2614,7 +2614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1894684435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2630,6 +2630,7 @@ MonoBehaviour:
   isEnabled: 1
   SessionConfig: {fileID: 2055630302}
   SessionName: {fileID: 2055630300}
+  LocalScore: {fileID: 0}
   LoadOnStart: 1
 --- !u!4 &1894684436
 Transform:
@@ -2783,7 +2784,7 @@ PrefabInstance:
     - target: {fileID: 1350069225053420694, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1350069225053420694, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
@@ -2804,6 +2805,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Session.Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266658150863707183, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694632585986215760, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 116d0754d293d354ebad0e6704156a5a, type: 3}
@@ -3474,7 +3485,7 @@ PrefabInstance:
     - target: {fileID: 2377331428399256899, guid: c6af7974fc80f4747b1e12513e6bd3b7,
         type: 3}
       propertyPath: CurrentValue
-      value: http://plutopersada.com/linknet/atom/index.php/gameuser/highscore
+      value: https://gamesfq.linknet.co.id/cube/index.php/gameuser/highscore
       objectReference: {fileID: 0}
     - target: {fileID: 2377331429186411033, guid: c6af7974fc80f4747b1e12513e6bd3b7,
         type: 3}
@@ -3525,6 +3536,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LinkNetServer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386345801692316553, guid: c6af7974fc80f4747b1e12513e6bd3b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6012251034881234596, guid: c6af7974fc80f4747b1e12513e6bd3b7,
         type: 3}
@@ -3907,6 +3923,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Session.ScoreServer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915685264149554514, guid: a56f281ba4dd91b47863595d939a252c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5915685264149554515, guid: a56f281ba4dd91b47863595d939a252c,
         type: 3}
@@ -4343,8 +4364,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1332280938}
   m_HandleRect: {fileID: 1332280937}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.58372086
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4480,7 +4501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4847,7 +4868,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 582.4}
+  m_SizeDelta: {x: 0, y: 2027.7592}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8514791239545491453
 MonoBehaviour:
