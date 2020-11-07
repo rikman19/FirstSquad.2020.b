@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45140713, g: 0.5008705, b: 0.57216054, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514069, g: 0.50087017, b: 0.5721601, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6004,7 +6004,7 @@ PrefabInstance:
     - target: {fileID: 1149845335477332266, guid: 3358e759bfdd20b419c78a9eef02877d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.11
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 1149845335477332266, guid: 3358e759bfdd20b419c78a9eef02877d,
         type: 3}
@@ -9207,6 +9207,11 @@ PrefabInstance:
         type: 3}
       propertyPath: LoadDelay
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838845860431085740, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2732633573026963918, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
@@ -12943,7 +12948,7 @@ PrefabInstance:
     - target: {fileID: 2620792480993240532, guid: 6e3c9ceee3dcec040944501b83939dde,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.11
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 2620792480993240532, guid: 6e3c9ceee3dcec040944501b83939dde,
         type: 3}
@@ -24091,7 +24096,7 @@ ParticleSystem:
 --- !u!199 &4905989822503570765
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 3
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -34037,7 +34042,7 @@ ParticleSystem:
 --- !u!199 &4905989823560973163
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 3
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
