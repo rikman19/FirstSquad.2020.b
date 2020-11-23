@@ -26,6 +26,7 @@ namespace Zetcil
         public VarString RegisterURL;
         public VarString UpdateScoreURL;
         public VarString HighScoreURL;
+        public VarString ForgotURL;
 
         [Header("Server Event Settings")]
         public UnityEvent ServerEvent;
@@ -80,11 +81,16 @@ namespace Zetcil
             string contenttag4 = "\t\t" + HighScoreURL.CurrentValue + "\n";
             string closetag4 = "\t</" + "HighScoreURL" + ">\n";
 
+            string opentag5 = "\t<" + "ForgotURL" + ">\n";
+            string contenttag5 = "\t\t" + ForgotURL.CurrentValue + "\n";
+            string closetag5 = "\t</" + "ForgotURL" + ">\n";
+
             result = opentag0 + contenttag0 + closetag0 +
                      opentag1 + contenttag1 + closetag1 +
                      opentag2 + contenttag2 + closetag2 +
                      opentag3 + contenttag3 + closetag3 +
-                     opentag4 + contenttag4 + closetag4;
+                     opentag4 + contenttag4 + closetag4 +
+                     opentag5 + contenttag5 + closetag5;
             result = header + result + footer;
 
             string DirName = GetDirectory(ConfigDirectory);
