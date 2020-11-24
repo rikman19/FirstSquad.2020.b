@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4514069, g: 0.50087017, b: 0.5721601, a: 1}
+  m_IndirectSpecularColor: {r: 0.45140737, g: 0.5008709, b: 0.572161, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5125,8 +5125,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 610596597}
   m_HandleRect: {fileID: 610596596}
   m_Direction: 0
-  m_Value: 0.0000012381053
-  m_Size: 0.33130252
+  m_Value: 0.0000019345428
+  m_Size: 0.3313029
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9244,12 +9244,12 @@ PrefabInstance:
     - target: {fileID: 4274596095999518357, guid: 2e255c348aa90264da2226cd740adfd8,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 603
+      value: 628
       objectReference: {fileID: 0}
     - target: {fileID: 4274596095999518357, guid: 2e255c348aa90264da2226cd740adfd8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -352
+      value: -359
       objectReference: {fileID: 0}
     - target: {fileID: 4274596095999518357, guid: 2e255c348aa90264da2226cd740adfd8,
         type: 3}
@@ -20995,7 +20995,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 686428604}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.44724765
+  m_Size: 0.6341053
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -23344,7 +23344,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3825bbb803678354899e8aa347345c81,
+      objectReference: {fileID: 21300000, guid: 222052a224eedfd47a8d48bbbb002bed,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e255c348aa90264da2226cd740adfd8, type: 3}
@@ -31133,8 +31133,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 182121380}
   m_HandleRect: {fileID: 182121379}
   m_Direction: 2
-  m_Value: 1.0002846
-  m_Size: 0.9977697
+  m_Value: 1.0002848
+  m_Size: 0.99777126
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -32858,7 +32858,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2116281355}
   m_HandleRect: {fileID: 2116281354}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 1.0000042
   m_Size: 0.9503744
   m_NumberOfSteps: 0
   m_OnValueChanged:
