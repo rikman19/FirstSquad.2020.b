@@ -244,8 +244,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{dedicated}: FirstArcade.keystore'
-  AndroidKeyaliasName: firstarcade1
+  AndroidKeystoreName: D:/Jobs/Keystores/FirstArcade.keystore
+  AndroidKeyaliasName: arcade1
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
