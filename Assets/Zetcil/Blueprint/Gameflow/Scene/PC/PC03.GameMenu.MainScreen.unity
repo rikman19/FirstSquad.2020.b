@@ -5078,8 +5078,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.5, y: 0.030002952}
-  m_SizeDelta: {x: 200.92883, y: 63.1}
+  m_AnchoredPosition: {x: 65.76, y: 0.030002952}
+  m_SizeDelta: {x: 255.20798, y: 63.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863921331
 MonoBehaviour:
@@ -5127,7 +5127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BARAYA SERVER
+  m_Text: CUBE STUDIO SERVER
 --- !u!222 &863921333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9368,7 +9368,7 @@ PrefabInstance:
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
       propertyPath: CurrentValue
-      value: http://plutopersada.com/linknet/atom/index.php/gameuser/forgot
+      value: http://cubestudio.id/client/linknet/atom/index.php/gameuser/forgot
       objectReference: {fileID: 0}
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
@@ -12943,6 +12943,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Session.Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 5367167884811692899, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: CurrentValue
+      value: http://cubestudio.id/client/linknet/atom/index.php/gameuser/connect
+      objectReference: {fileID: 0}
     - target: {fileID: 6355920042573911523, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
       propertyPath: CurrentValue
@@ -12953,10 +12958,25 @@ PrefabInstance:
       propertyPath: CurrentValue
       value: https://gamesfq.linknet.co.id/cube/index.php/gameuser/register
       objectReference: {fileID: 0}
+    - target: {fileID: 6355920042731539609, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: CurrentValue
+      value: http://cubestudio.id/client/linknet/atom/index.php/gameuser/register
+      objectReference: {fileID: 0}
     - target: {fileID: 6355920043037093861, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
       propertyPath: CurrentValue
       value: https://gamesfq.linknet.co.id/cube/index.php/gameuser/updatescore
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355920043046261249, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: CurrentValue
+      value: http://cubestudio.id/client/linknet/atom/index.php/gameuser/updatescore
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355920043775142490, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: CurrentValue
+      value: http://cubestudio.id/client/linknet/atom/index.php/gameuser/highscore
       objectReference: {fileID: 0}
     - target: {fileID: 6355920044151667804, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
@@ -12967,6 +12987,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CurrentValue
       value: https://gamesfq.linknet.co.id/cube/index.php/gameuser/highscore
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355920044458239161, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: CurrentValue
+      value: http://cubestudio.id/client/linknet/atom/index.php/gameuser/login
       objectReference: {fileID: 0}
     - target: {fileID: 7152035668301900445, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
@@ -13019,7 +13044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &114377841547452937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14326,7 +14351,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: LOGIN BARAYA SERVER
+          m_StringArgument: LOGIN CUBE STUDIO SERVER
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 602724922}
@@ -16303,7 +16328,7 @@ PrefabInstance:
     - target: {fileID: 7141515595803284090, guid: 880843924e6971c41a0759615a30016c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.210022
+      value: 2.210083
       objectReference: {fileID: 0}
     - target: {fileID: 7141515595803284090, guid: 880843924e6971c41a0759615a30016c,
         type: 3}
