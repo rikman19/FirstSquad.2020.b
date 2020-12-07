@@ -4624,6 +4624,11 @@ PrefabInstance:
       propertyPath: LoadDelay
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1838845860431085740, guid: 116d0754d293d354ebad0e6704156a5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2579260223222155398, guid: 116d0754d293d354ebad0e6704156a5a,
         type: 3}
       propertyPath: CurrentValue

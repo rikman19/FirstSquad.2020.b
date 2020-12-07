@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45140713, g: 0.5008705, b: 0.57216054, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514069, g: 0.50087017, b: 0.5721601, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -26293,6 +26293,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf857bd760ec0484e857485142cbbd42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1150906574 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2468854692132417980, guid: 116d0754d293d354ebad0e6704156a5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1150906568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf8cc6cf629a2b4bb50c30bb9f3fbb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1157050373
 GameObject:
   m_ObjectHideFlags: 0
@@ -40557,7 +40569,7 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
@@ -40852,6 +40864,36 @@ PrefabInstance:
     - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
         type: 3}
       propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
+        type: 3}
+      propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[8].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
+        type: 3}
+      propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[8].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
+        type: 3}
+      propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[8].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
+        type: 3}
+      propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[8].m_Target
+      value: 
+      objectReference: {fileID: 1150906574}
+    - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
+        type: 3}
+      propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[8].m_MethodName
+      value: InvokeEventController
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672249731406648, guid: f8683de3ff62e954aab26abbdfa42f36,
+        type: 3}
+      propertyPath: GameObjectEvent.m_PersistentCalls.m_Calls.Array.data[8].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []

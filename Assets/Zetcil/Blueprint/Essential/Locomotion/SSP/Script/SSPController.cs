@@ -63,12 +63,20 @@ namespace Zetcil
                 isGrounded = false;
                 rigidbody2D.AddForce(Vector3.up * jumpSpeed);
             }
-            Invoke("Cooldown", 1);
+            Invoke("Cooldown", 2);
+        }
+
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag == "Ground")
+            {
+                isGrounded = true;
+            }
         }
 
         void Cooldown()
         {
-            isGrounded = true;
+            //isGrounded = true;
         }
     }
 }

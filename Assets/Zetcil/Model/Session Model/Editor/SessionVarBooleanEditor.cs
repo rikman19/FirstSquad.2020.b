@@ -13,7 +13,9 @@ namespace Zetcil
            SessionKey,
            SessionValue,
            LoadOnStart,
-           LoadDelay
+           LoadDelay,
+           usingSessionEvent,
+           SessionEvent
         ;
 
         void OnEnable()
@@ -26,6 +28,8 @@ namespace Zetcil
             SessionValue = serializedObject.FindProperty("SessionValue");
             LoadOnStart = serializedObject.FindProperty("LoadOnStart");
             LoadDelay = serializedObject.FindProperty("LoadDelay");
+            usingSessionEvent = serializedObject.FindProperty("usingSessionEvent");
+            SessionEvent = serializedObject.FindProperty("SessionEvent");
         }
         public override void OnInspectorGUI()
         {
@@ -55,6 +59,9 @@ namespace Zetcil
                 }
                 EditorGUILayout.PropertyField(LoadOnStart, true);
                 EditorGUILayout.PropertyField(LoadDelay, true);
+
+                EditorGUILayout.PropertyField(usingSessionEvent, true);
+                EditorGUILayout.PropertyField(SessionEvent, true);
             }
             else
             {

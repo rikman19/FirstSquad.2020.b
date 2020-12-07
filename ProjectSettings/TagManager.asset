@@ -50,6 +50,7 @@ TagManager:
   - Dynamite
   - PlayerAttack
   - EnemyBody
+  - Ground
   layers:
   - Default
   - TransparentFX

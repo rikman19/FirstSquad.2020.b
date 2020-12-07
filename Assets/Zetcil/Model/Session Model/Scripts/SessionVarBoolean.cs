@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using System.Xml;
 using System.IO;
 using TechnomediaLabs;
@@ -24,6 +25,10 @@ namespace Zetcil
         [Header("Load Setting")]
         public bool LoadOnStart;
         public float LoadDelay;
+
+        [Header("Event Setting")]
+        public bool usingSessionEvent;
+        public UnityEvent SessionEvent;
 
         // Start is called before the first frame update
         void Start()
@@ -196,6 +201,11 @@ namespace Zetcil
 
                 xmlnodelist = xmldoc.GetElementsByTagName("SessionValue");
                 SessionValue.CurrentValue = bool.Parse(xmlnodelist.Item(0).InnerText.Trim());
+
+                if (usingSessionEvent)
+                {
+                    SessionEvent.Invoke();
+                }
             }
         }
 

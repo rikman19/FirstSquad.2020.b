@@ -19,12 +19,68 @@ namespace Zetcil
 
         [Header("Variable Settings")]
         public VarString SessionName;
-        public string LevelName;
-        public VarFloat SetValue;
+        public VarString LevelName;
+
+        public bool usingVarInteger;
+        public VarFloat VarIntegerValue;
+
+        public bool usingVarFloat;
+        public VarFloat VarFloatValue;
+
+        public bool usingVarString;
+        public VarFloat VarStringValue;
+
+        public bool usingVarScore;
+        public VarScore VarScoreValue;
 
         [Header("Output Settings")]
-        public VarString RequestOutput;
+        [TextArea(5,10)]
+        public string RequestOutput;
         public bool PrintDebugConsole;
+
+        public void InvokeSetScoreModel()
+        {
+            MainURL.CurrentValue = MainURL.CurrentValue.Replace("/connect", "");
+
+            SubmitURL = MainURL.CurrentValue + "/" + FunctionURL +
+                       "/" + SessionName.CurrentValue +
+                       "/" + LevelName.CurrentValue +
+                       "/" + VarScoreValue.CurrentValue.ToString();
+            StartCoroutine(StartPHPRequest());
+        }
+
+        public void InvokeSetStringModel()
+        {
+            MainURL.CurrentValue = MainURL.CurrentValue.Replace("/connect", "");
+
+            SubmitURL = MainURL.CurrentValue + "/" + FunctionURL +
+                       "/" + SessionName.CurrentValue +
+                       "/" + LevelName.CurrentValue +
+                       "/" + VarStringValue.CurrentValue.ToString();
+            StartCoroutine(StartPHPRequest());
+        }
+
+        public void InvokeSetIntegerModel()
+        {
+            MainURL.CurrentValue = MainURL.CurrentValue.Replace("/connect", "");
+
+            SubmitURL = MainURL.CurrentValue + "/" + FunctionURL +
+                       "/" + SessionName.CurrentValue +
+                       "/" + LevelName.CurrentValue +
+                       "/" + VarIntegerValue.CurrentValue.ToString();
+            StartCoroutine(StartPHPRequest());
+        }
+
+        public void InvokeSetFloatModel()
+        {
+            MainURL.CurrentValue = MainURL.CurrentValue.Replace("/connect", "");
+
+            SubmitURL = MainURL.CurrentValue + "/" + FunctionURL +
+                       "/" + SessionName.CurrentValue +
+                       "/" + LevelName.CurrentValue +
+                       "/" + VarFloatValue.CurrentValue.ToString();
+            StartCoroutine(StartPHPRequest());
+        }
 
         public void InvokeSetConnectModel()
         {
@@ -32,8 +88,8 @@ namespace Zetcil
 
             SubmitURL = MainURL.CurrentValue + "/" + FunctionURL +
                        "/" + SessionName.CurrentValue +
-                       "/" + LevelName +
-                       "/" + SetValue.CurrentValue.ToString();
+                       "/" + LevelName.CurrentValue +
+                       "/" + VarStringValue.CurrentValue.ToString();
             StartCoroutine(StartPHPRequest());
         }
 
@@ -41,8 +97,8 @@ namespace Zetcil
         {
             SubmitURL = MainURL.CurrentValue + "/" + FunctionURL +
                        "/" + SessionName.CurrentValue +
-                       "/" + LevelName +
-                       "/" + SetValue.CurrentValue.ToString();
+                       "/" + LevelName.CurrentValue +
+                       "/" + VarStringValue.CurrentValue.ToString();
             StartCoroutine(StartPHPRequest());
         }
 
@@ -60,7 +116,7 @@ namespace Zetcil
             }
             else
             {
-                RequestOutput.CurrentValue = webRequest.downloadHandler.text;
+                RequestOutput = webRequest.downloadHandler.text;
                 if (PrintDebugConsole)
                 {
                     Debug.Log(SubmitURL);

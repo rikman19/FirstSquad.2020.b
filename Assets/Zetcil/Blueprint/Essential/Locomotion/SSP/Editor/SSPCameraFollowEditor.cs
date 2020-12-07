@@ -11,7 +11,8 @@ namespace Zetcil
            CameraController,
            specificVector,
            smoothSpeed,
-            offsetY
+           offsetX,
+           offsetY
         ;
 
         void OnEnable()
@@ -21,6 +22,7 @@ namespace Zetcil
             CameraController = serializedObject.FindProperty("CameraController");
             specificVector = serializedObject.FindProperty("specificVector");
             smoothSpeed = serializedObject.FindProperty("smoothSpeed");
+            offsetX = serializedObject.FindProperty("offsetX");
             offsetY = serializedObject.FindProperty("offsetY");
         }
         public override void OnInspectorGUI()
@@ -36,6 +38,7 @@ namespace Zetcil
                 }
                 EditorGUILayout.PropertyField(specificVector, true);
                 EditorGUILayout.PropertyField(smoothSpeed, true);
+                EditorGUILayout.PropertyField(offsetX, true);
                 EditorGUILayout.PropertyField(offsetY, true);
             }
             else

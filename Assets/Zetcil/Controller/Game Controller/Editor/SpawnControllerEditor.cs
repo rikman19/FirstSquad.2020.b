@@ -22,7 +22,9 @@ namespace Zetcil
             usingDelay,
             Delay,
             usingInterval,
-            Interval
+            Interval,
+            usingScale,
+            SpawnScale
             ;
 
         void OnEnable()
@@ -43,6 +45,8 @@ namespace Zetcil
             Delay = serializedObject.FindProperty("Delay");
             usingInterval = serializedObject.FindProperty("usingInterval");
             Interval = serializedObject.FindProperty("Interval");
+            usingScale = serializedObject.FindProperty("usingScale");
+            SpawnScale = serializedObject.FindProperty("SpawnScale");
         }
 
         public override void OnInspectorGUI()
@@ -103,6 +107,9 @@ namespace Zetcil
                         EditorGUILayout.PropertyField(Interval, true);
                     }
                 }
+
+                EditorGUILayout.PropertyField(usingScale);
+                EditorGUILayout.PropertyField(SpawnScale);
             }
             else
             {

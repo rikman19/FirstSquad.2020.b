@@ -47,6 +47,8 @@ namespace Zetcil
         public bool usingInterval;
         public float Interval;
 
+        public bool usingScale;
+        public Vector3 SpawnScale;
 
         // Use this for initialization
         void Awake()
@@ -105,6 +107,12 @@ namespace Zetcil
                     if (PrefabList == CPrefabList.Static)
                     {
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation, TargetParent);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
@@ -121,6 +129,13 @@ namespace Zetcil
                     if (PrefabList == CPrefabList.Increment)
                     {
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation, TargetParent);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
@@ -146,7 +161,14 @@ namespace Zetcil
                         {
                             CurrentIndex = TargetPrefab.Count - 1;
                         }
+
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation, TargetParent);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
@@ -163,7 +185,14 @@ namespace Zetcil
                     if (PrefabList == CPrefabList.Random)
                     {
                         CurrentIndex = Random.Range(0, TargetPrefab.Count - 1);
+
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation, TargetParent);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
@@ -182,6 +211,12 @@ namespace Zetcil
                     if (PrefabList == CPrefabList.Static)
                     {
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
@@ -198,6 +233,12 @@ namespace Zetcil
                     if (PrefabList == CPrefabList.Increment)
                     {
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
@@ -223,7 +264,14 @@ namespace Zetcil
                         {
                             CurrentIndex = TargetPrefab.Count - 1;
                         }
+
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
@@ -240,7 +288,14 @@ namespace Zetcil
                     if (PrefabList == CPrefabList.Random)
                     {
                         CurrentIndex = Random.Range(0, TargetPrefab.Count - 1);
+
                         GameObject static_temp = Instantiate(TargetPrefab[CurrentIndex], TargetPosition.position, TargetPosition.rotation);
+
+                        if (usingScale)
+                        {
+                            static_temp.transform.localScale = SpawnScale;
+                        }
+
                         if (AfterSpawn == CEnumAfterSpawn.DetachFromParent)
                         {
                             static_temp.transform.parent = null;
