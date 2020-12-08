@@ -42,9 +42,19 @@ namespace Zetcil
         // Use this for initialization
         void Start()
         {
-            if (usingPlayCondition)
+            if (GameStatus == CGameStatus.Play) // if current state is Play
             {
-                PlayCondition.Invoke();
+                if (usingPlayCondition)
+                {
+                    PlayCondition.Invoke();
+                }
+            }
+            else
+            {
+                if (usingPauseCondition)
+                {
+                    PauseCondition.Invoke();
+                }
             }
         }
 
