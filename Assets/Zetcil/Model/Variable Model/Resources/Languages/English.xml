@@ -88,6 +88,7 @@
 		<Tips>TIPS</Tips>
 		<Hint>HINT</Hint>
 		<Puzzle>PUZZLE</Puzzle>
+    <Instruction>INSTRUCTION</Instruction>
 	</UIGroup>
 
 	<InformationGroup>
@@ -165,7 +166,19 @@
 		<Level4_Desc>In a frying the food is cut into similarly sized bite-sized pieces and cook with a small amount of oil.</Level4_Desc>
 		<Level5_Title>Braising</Level5_Title>
 		<Level5_Desc>This term is used in conjunction with meat, in particular cuts of meat that benefit from long, slow cooking to become tender.</Level5_Desc>
-	</LevelGroup>
+
+    <LVA_Desc>Find a card with the same picture!</LVA_Desc>
+    <LVB_Desc>Slide according to the words requested!</LVB_Desc>
+    <LVC_Desc>Catch the GOOD VALUE and avoid the BAD VALUE</LVC_Desc>
+    <LVD_Desc>Lompat [TAP] untuk menangkap GOOD VALUE dan hindari BAD VALUE</LVD_Desc>
+    <LVE_Desc1>Arrange the bar to let the ball fall to the chamber and get the good value</LVE_Desc1>
+    <LVE_Desc2>Drag and drop to move the bar press "PLAY" to let the ball fall</LVE_Desc2>
+    <LVF_Desc1>Look for items according to the list</LVF_Desc1>
+    <LVF_Desc2>Swipe to look around</LVF_Desc2>
+    <LVG_Desc1>choose the empty green field to add first squad</LVG_Desc1>
+    <LVG_Desc2>Aware of your energy!</LVG_Desc2>
+    
+  </LevelGroup>
 	
 	<HintGroup>
 		<Hint1>Default Action</Hint1>

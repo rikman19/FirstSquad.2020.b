@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45140713, g: 0.5008705, b: 0.57216054, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514069, g: 0.50087, b: 0.5721598, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23341,12 +23341,17 @@ PrefabInstance:
     - target: {fileID: 8018014528368656040, guid: 6a974004c0f6f3742ae01066de41449d,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 486.0855
+      value: 1040.9185
       objectReference: {fileID: 0}
     - target: {fileID: 8018014528368656042, guid: 6a974004c0f6f3742ae01066de41449d,
         type: 3}
       propertyPath: m_Text
       value: Jump [TAP] to Catch the GOOD VALUE and dodge BAD VALUE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8018014528368656043, guid: 6a974004c0f6f3742ae01066de41449d,
+        type: 3}
+      propertyPath: LanguageID
+      value: LVD_Desc
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a974004c0f6f3742ae01066de41449d, type: 3}

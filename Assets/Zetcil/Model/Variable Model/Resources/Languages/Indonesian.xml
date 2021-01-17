@@ -88,6 +88,7 @@
 		<Tips>TIPS</Tips>
 		<Hint>HINT</Hint>
 		<Puzzle>PUZZLE</Puzzle>
+  <Instruction>INSTRUKSI</Instruction>
     </UIGroup>
 	
 	<InformationGroup>
@@ -165,7 +166,18 @@
 		<Level4_Desc>Dalam penggorengan makanan dipotong menjadi potongan-potongan kecil seukuran gigitan dan masak dengan sedikit minyak.</Level4_Desc>
 		<Level5_Title>Braising</Level5_Title>
 		<Level5_Desc>Istilah ini digunakan bersama dengan daging, khususnya potongan daging yang mendapat manfaat dari memasak lama dan lambat untuk menjadi empuk.</Level5_Desc>
-	</LevelGroup>
+	
+		<LVA_Desc>Temukan kartu dengan gambar yang sama!</LVA_Desc>
+		<LVB_Desc>Sentuh lalu seret sesuai dengan kata yang diminta!</LVB_Desc>
+		<LVC_Desc>Geser untuk menangkap GOOD VALUE dan hindari BAD VALUE</LVC_Desc>
+		<LVD_Desc>Lompat [TAP] untuk menangkap GOOD VALUE dan hindari BAD VALUE</LVD_Desc>
+		<LVE_Desc1>Atur papan agar bola jatuh ke dalam wadah dan dapatkan GOOD VALUE</LVE_Desc1>
+		<LVE_Desc2>Drag dan drop untuk menggerakkan papan dan tekan "PLAY" untuk membuat bola jatuh</LVE_Desc2>
+		<LVF_Desc1>Cari item sesuai dengan list yang diminta</LVF_Desc1>
+		<LVF_Desc2>Sentuh lalu geser untuk melihat sekitar</LVF_Desc2>
+		<LVG_Desc1>Pilih kotak hijau yang kosong untuk menambah first squad</LVG_Desc1>
+    <LVG_Desc2>Hati-hati dengan energimu!</LVG_Desc2>
+  </LevelGroup>
 
 	<HintGroup>
 		<Hint1>Aksi Default </Hint1>
